@@ -98,10 +98,11 @@ module battery_holder() {
 
     //battery holder, "on" position
     difference() {
-        hoop(h=battery_h + hang);
+        translate([0,0,-vwall])
+        hoop(h=battery_h + 2 * vwall);
         
-        translate([shift, -battery_d/2, -D])
-            cube([battery_d, battery_d, battery_h + hang + 2*D]);
+        translate([shift, -battery_d/2, -D-vwall])
+            cube([battery_d, battery_d, battery_h + hang + 2 * vwall + 2*D]);
         
         translate([-(wall2+battery_d/2), -led_d/2, battery_h - led_d])
             cube( [wall2 + led_inset + D, led_d, led_d+D]);
@@ -203,9 +204,6 @@ module battery_holder() {
         translate([0, -finger_gap/2, -D])
             cube([battery_d, finger_gap, vwall + 2*D]);
     }
-
-
-    
 }
 
 module polar_illuminator() {
