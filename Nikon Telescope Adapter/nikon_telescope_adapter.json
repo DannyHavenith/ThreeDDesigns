@@ -1,0 +1,30 @@
+{
+    "parameterSets": {
+        "1.25 inch long": {
+            "collar_length": "20",
+            "input_cone_height": "20",
+            "input_overhang_angle": "45",
+            "tube_diameter": "31.75",
+            "tube_length": "30",
+            "wall": "3"
+        },
+        "1.25 inch": {
+            "collar_length": "1",
+            "input_cone_height": "0",
+            "input_overhang_angle": "45",
+            "tube_diameter": "31.75",
+            "tube_length": "30",
+            "wall": "3"
+        },
+        "2 inch": {
+            "collar_length": "1",
+            "input_cone_height": "0",
+            "input_overhang_angle": "45",
+            "tube_diameter": "50.8",
+            "tube_length": "30",
+            "wall": "3"
+        }
+    },
+    "parameterSets": "",
+    "fileFormatVersion": "1"
+}
